@@ -13,11 +13,8 @@ on:
 jobs:
   # This workflow contains a single job called "build"
   test:
-    name: Test homebrew-chinese on ${{ matrix.os }}
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        os: [ubuntu-20.04, ubuntu-18.04]
+    name: Test Homebrew-Linux
+    runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v3
