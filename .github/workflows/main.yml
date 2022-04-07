@@ -26,5 +26,5 @@ jobs:
           brew tap ivaquero/linux
           cd $(brew --prefix)/Homebrew/Library/Taps/ivaquero/homebrew-linux
           for formula in Formula/*.rb; do
-              echo "ivaquero/chinese/$formula" | sed "s/\/Formula//g" | sed "s/.rb//g" | xargs brew install
+              echo "ivaquero/linux/$formula" | sed "s/\/Formula//g" | sed "s/.rb//g" | xargs brew install
           done
