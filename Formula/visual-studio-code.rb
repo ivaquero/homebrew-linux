@@ -1,4 +1,4 @@
-class Vscode < Formula
+class Visual-Studio-Code < Formula
     desc "Open-source code editor"
     homepage "https://code.visualstudio.com"
     version "1.66.0"
