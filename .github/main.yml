@@ -31,4 +31,3 @@ jobs:
           for formula in Formula/*.rb; do
               echo "ivaquero/chinese/$formula" | sed "s/\/Formula//g" | sed "s/.rb//g" | xargs brew install
           done
-   
