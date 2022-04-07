@@ -6,9 +6,6 @@ class Firefox < Formula
     url "https://download-installer.cdn.mozilla.net/pub/firefox/releases/#{version}/linux-x86_64/en-US/firefox-#{version}.tar.bz2"
     sha256 "0273b63e8bd2901fef31971f0e422e943e04ea86f647e175473bfc668e326bbd"
 
-    conflicts_with "firefox-zhcn"
-    bottle :unneeded
-
     def install
         libexec.install Dir["*"]
         bin.install_symlink("#{libexec}/firefox" => "firefox-browser")
