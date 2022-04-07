@@ -4,7 +4,7 @@ class VisualStudioCode < Formula
     version "1.66.0"
 
     url "https://github.com/microsoft/vscode/archive/refs/tags/#{version}.tar.gz"
-    sha256 "97bc49f68a35d8f22fe2706a09ba62e90f2995f4c4f23beb7091e8f9a7cdeb0d"
+    sha256 "1c93918ebd00b8e9fc0d8fea13cbe2947f5b83d2d8f5c8d1b00bde885bb925d7"
 
     def install
         libexec.install Dir["*"]
