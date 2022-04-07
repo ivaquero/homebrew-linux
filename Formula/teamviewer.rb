@@ -1,10 +1,10 @@
 class Teamviewer < Formula
     desc "Remote support, remote access, and online meeting software that the world relies on."
     homepage "http://www.teamviewer.com/"
-    version "12.0.71510"
+    version "15.28.8"
 
     url "https://download.teamviewer.com/download/teamviewer_i386.tar.xz"
-    sha256 "6a0a35881f4b74bccfb90b721dbb60944a78b2db5a56d08693182b1a8ebd6d9d"
+    sha256 "c64432844f83d8ee4785257f7edcc2a527de3319b4e111b8b877f0b85945c300"
 
     def install
         libexec.install Dir["*"]
