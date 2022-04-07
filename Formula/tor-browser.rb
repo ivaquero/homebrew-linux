@@ -1,10 +1,10 @@
 class TorBrowser < Formula
   desc "Modified Firefox with privacy add-ons, encryption & advanced proxy"
   homepage "https://www.torproject.org/projects/torbrowser.html.en"
-  version "7.0.10"
+  version "11.0.9"
 
   url "https://www.torproject.org/dist/torbrowser/#{version}/tor-browser-linux64-#{version}_en-US.tar.xz"
-  sha256 "10eebffe22594d336441ed59e5edc97ba1d296eb7d94bca3ff94ebfac2da3e34"
+  sha256 "baa5ccafb5c68f1c46f9ae983b9b0a0419f66d41e0483ba5aacb3462fa0a8032"
 
 
   def install
