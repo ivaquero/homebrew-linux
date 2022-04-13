@@ -1,40 +1,11 @@
-<div>
-  <div align="left">
-    <h1 align="left">Homebrew-Linux</h1>
-    <p>
-      <a>
-        <img
-          src="https://img.shields.io/github/workflow/status/ivaquero/homebrew-linux/CI.svg"
-        />
-      </a>
-      <a>
-        <img
-          src="https://img.shields.io/github/languages/code-size/ivaquero/homebrew-linux.svg"
-        />
-      </a>
-      <a>
-        <img
-          src="https://img.shields.io/github/repo-size/ivaquero/homebrew-linux.svg"
-        />
-      </a>
-      <a>
-        <img
-          src="https://img.shields.io/github/license/ivaquero/homebrew-linux"
-        />
-      </a>
-    </p>
-  </div>
+# Homebrew-Linux
 
-  <p></p>
+[![build](https://img.shields.io/github/workflow/status/ivaquero/homebrew-linux/CI.svg)](https://img.shields.io/github/workflow/status/ivaquero/homebrew-linux/CI.svg)
+[![code size](https://img.shields.io/github/languages/code-size/ivaquero/homebrew-linux.svg)](https://img.shields.io/github/languages/code-size/ivaquero/homebrew-linux.svg)
+[![repo size](https://img.shields.io/github/repo-size/ivaquero/homebrew-linux.svg)](https://img.shields.io/github/repo-size/ivaquero/homebrew-linux.svg)
+[![license](https://img.shields.io/github/license/ivaquero/homebrew-linux)](https://img.shields.io/github/license/ivaquero/homebrew-linux)
 
-  <div>
-    <p>
-      A Homebrew 
-      <a href="https://github.com/Homebrew/brew"> Homebrew </a> 🍺 Repo to Install GUI Applications on Linux
-    </p>
-  </div>
-</div>
-
+A [Homebrew](https://github.com/Homebrew/brew) 🍺 Repo to Install GUI Applications on Linux
 
 Just a fork of [athrunsun/linuxbinary](https://github.com/athrunsun/homebrew-linuxbinary/)
 
