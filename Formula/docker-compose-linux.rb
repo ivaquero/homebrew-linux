@@ -1,17 +1,23 @@
 class DockerComposeLinux < Formula
+    arch = Hardware::CPU.intel? ? "x86_64" : "aarch64"
+
+    version "2.5.0"
+
+    if Hardware::CPU.intel?
+        sha256 "6296d17268c77a7159f57f04ed26dd2989f909c58cca4d44d1865f28bd27dd67"
+    else
+        sha256 "b9b722ab0c5ac6099092c43a04426e84bd9b857e646a1f7fe987fb09efdeffec"
+    end
+
+    url "https://github.com/docker/compose/releases/download/#{version}/docker-compose-Linux-#{arch}"
     desc "Isolated development environments using Docker."
     homepage "https://github.com/docker/compose"
-    version "1.23.1"
-
-    url "https://github.com/docker/compose/releases/download/#{version}/docker-compose-Linux-x86_64"
-    sha256 "c176543737b8aea762022245f0f4d58781d3cb1b072bc14f3f8e5bb96f90f1a2"
-
-    bottle :unneeded
+    
     conflicts_with "docker-compose"
 
     def install
         libexec.install Dir["*"]
-        mv("#{libexec}/docker-compose-Linux-x86_64", "#{libexec}/docker-compose")
+        mv("#{libexec}/docker-compose-Linux-#{arch}", "#{libexec}/docker-compose")
         chmod(0755, "#{libexec}/docker-compose")
         bin.install_symlink("#{libexec}/docker-compose")
     end
