@@ -4,7 +4,7 @@ class BraveBrowser < Formula
     version "1.38.109"
 
     url "https://github.com/brave/brave-browser/releases/download/v#{version}/brave-browser-#{version}-linux-amd64.zip"
-    sha256 "3bcff0a481b1b3f2ac19c2c0363d6b5ce0edfaa219cd0311ace53fbec25487fa"
+    sha256 "9120b7eda8f8b986035d98ec782810b32ffc60e6aea3b2232795721a43731a36"
 
     def install
         libexec.install Dir["*"]
