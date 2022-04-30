@@ -1,4 +1,4 @@
-class Pwsh < Formula
+class Powershell < Formula
     desc "PowerShell for every system"
     homepage "https://github.com/PowerShell/PowerShell"
     version "7.2.1"

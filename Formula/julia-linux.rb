@@ -3,9 +3,9 @@ class JuliaLinux < Formula
   homepage "https://julialang.org"
   version "1.5.0"
 
-  option "with-bfsu-mirror", "Download from https://mirrors.bfsu.edu.cn, use this option if you're in mainland China for a faster downloading speed."
+  option "with-cn-mirror", "Download from https://mirrors.bfsu.edu.cn, use this option if you're in mainland China for a faster downloading speed."
 
-    if build.with? "bfsu-mirror"
+    if build.with? "cn-mirror"
         url "https://mirrors.bfsu.edu.cn/julia-releases/bin/linux/x64/1.5/julia-1.5.0-linux-x86_64.tar.gz"
     else
         url "https://julialang-s3.julialang.org/bin/linux/x64/1.5/julia-1.5.0-linux-x86_64.tar.gz"
