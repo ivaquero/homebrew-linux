@@ -1,9 +1,9 @@
 class Rubymine < Formula
     desc "The Most Intelligent Ruby and Rails IDE."
     homepage "http://www.jetbrains.com/ruby/"
-    version "2017.1.4"
+    version "2022.1"
     url "https://download.jetbrains.com/ruby/RubyMine-#{version}.tar.gz"
-    sha256 "1f991efdda770d5e267d70bc6f547bb2417d485533940888c88f304bad02531a"
+    sha256 "495c0d86eb7f3bed0ed692a7ae37e8b3b333c58ae891ca3891a311db6b951401"
 
     def install
         libexec.install Dir["*"]

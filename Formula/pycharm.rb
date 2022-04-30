@@ -1,9 +1,9 @@
 class Pycharm < Formula
     desc "Python IDE for Professional Developers, professional edition."
     homepage "http://www.jetbrains.com/pycharm/"
-    version "2018.1.4"
+    version "2022.1"
     url "https://download.jetbrains.com/python/pycharm-professional-#{version}.tar.gz"
-    sha256 "6cda9b2717b161387983a09ed88b39d76d88fea208601d125666c02b7c6961cf"
+    sha256 "9b160ed74f384be31ff376af73f91924a212e6440ce142a581b22f261e6cf605"
 
     def install
         libexec.install Dir["*"]

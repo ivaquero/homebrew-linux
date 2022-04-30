@@ -1,9 +1,9 @@
 class PycharmCe < Formula
     desc "Python IDE for Professional Developers, community edition."
     homepage "http://www.jetbrains.com/pycharm/"
-    version "2018.1.4"
+    version "2022.1"
     url "https://download.jetbrains.com/python/pycharm-community-#{version}.tar.gz"
-    sha256 "90953ca424bb331348e3575975fab4e189ab126ddc367223e3a7cb01b1563f3b"
+    sha256 "35d857df0ac4bd76caba60ac329c9183594be142094d0592f2afa40534be85eb"
 
     def install
         libexec.install Dir["*"]

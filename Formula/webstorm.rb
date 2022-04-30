@@ -1,9 +1,9 @@
 class Webstorm < Formula
     desc "The smartest JavaScript IDE."
     homepage "http://www.jetbrains.com/webstorm/"
-    version "2017.1.4"
+    version "2022.1"
     url "https://download.jetbrains.com/webstorm/WebStorm-#{version}.tar.gz"
-    sha256 "f50b5cf70a0566976313c31530c20093ef526746ff4d27ec2e5adbc99138822b"
+    sha256 "d9dd5815cc456d74f7dc47533ade3990d0f2f9ce0c4dab3d5ae9b04e01d1746c"
 
     def install
         libexec.install Dir["*"]
