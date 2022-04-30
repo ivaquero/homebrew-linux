@@ -1,10 +1,18 @@
 class Vscodium < Formula
+    arch = Hardware::CPU.intel? ? "x86_64" : "aarch64"
+
+    version "1.66.2"
+
+    if Hardware::CPU.intel?
+        sha256 "f682b11a39c9e65949a297fdd3d9fef6b472d7084f47eb5813cb7814468fe6c4"
+    else
+        sha256 "41d449cb64a65f7eeee4bac9190410d77f1a56540633c5b769276c617174518e"
+    end
+    
+    url "https://github.com/VSCodium/vscodium/releases/download/#{version}/VSCodium-linux-#{arch}-#{version}.tar.gz"
+
     desc "Binary releases of VS Code without MS branding/telemetry/licensing."
     homepage "https://github.com/VSCodium/vscodium"
-    version "1.33.1"
-
-    url "https://github.com/VSCodium/vscodium/releases/download/#{version}/VSCodium-linux-x64-#{version}.tar.gz"
-    sha256 "ff90d3541627e380afc7026c0ec9b451510a9440e457c951c8a3e3261aefb017"
 
     def install
         libexec.install Dir["*"]
