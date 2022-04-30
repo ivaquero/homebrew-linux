@@ -3,7 +3,7 @@ class BraveBrowser < Formula
     homepage "https://github.com/brave/brave-browser"
     version "1.38.109"
 
-    url "https://github.com/brave/brave-browser/releases/download/v#{version}/brave-#{version}-linux-amd64.zip"
+    url "https://github.com/brave/brave-browser/releases/download/v#{version}/brave-browser-#{version}-linux-amd64.zip"
     sha256 "3bcff0a481b1b3f2ac19c2c0363d6b5ce0edfaa219cd0311ace53fbec25487fa"
 
     def install
