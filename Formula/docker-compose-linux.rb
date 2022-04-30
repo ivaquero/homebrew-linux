@@ -9,10 +9,10 @@ class DockerComposeLinux < Formula
         sha256 "b9b722ab0c5ac6099092c43a04426e84bd9b857e646a1f7fe987fb09efdeffec"
     end
 
-    url "https://github.com/docker/compose/releases/download/#{version}/docker-compose-Linux-#{arch}"
+    url "https://github.com/docker/compose/releases/download/v#{version}/docker-compose-linux-#{arch}"
     desc "Isolated development environments using Docker."
     homepage "https://github.com/docker/compose"
-    
+    docker-compose-linux-x86_64
     conflicts_with "docker-compose"
 
     def install
