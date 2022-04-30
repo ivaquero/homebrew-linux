@@ -4,7 +4,8 @@ class Calibre < Formula
   version "5.41.0"
 
   url "https://github.com/kovidgoyal/calibre/releases/download/v#{version}/calibre-#{version}-x86_64.txz"
-  sha256 "c341796af47b608f988b2bbd5ee38b10f556c2115234731d1f612a17a396b128"
+  sha256 "d04a92edb337d6f9b7c28ae05cb34ebdf77d4d0b7a32b2d424ac76dbd32bace9"
+  
   def install
     libexec.install Dir["*"]
     bin.install_symlink("#{libexec}/calibre" => "calibre")
