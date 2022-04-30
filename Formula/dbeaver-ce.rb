@@ -4,13 +4,12 @@ class DbeaverCe < Formula
     version "22.0.3"
 
     if Hardware::CPU.intel?
-        url "https://github.com/dbeaver/dbeaver/releases/download/#{version}/dbeaver-ce-#{version}-linux.gtk.x86_64-nojdk.tar.gz"
-        sha256 "b9b722ab0c5ac6099092c43a04426e84bd9b857e646a1f7fe987fb09efdeffec"
+        sha256 "381ef5f2c317dd7e000f7e79c185b60576f653e32b1db1301d0b272ee721ade3"
     else
-        url "https://github.com/dbeaver/dbeaver/releases/download/#{version}/dbeaver-ce-#{version}-linux.gtk.aarch64-nojdk.tar.gz"
         sha256 "b9b722ab0c5ac6099092c43a04426e84bd9b857e646a1f7fe987fb09efdeffec"
     end
-
+    
+    url "https://github.com/dbeaver/dbeaver/releases/download/#{version}/dbeaver-ce-#{version}-linux.gtk.#{arch}-nojdk.tar.gz"
     desc "Free universal database tool and SQL client."
     homepage "https://github.com/dbeaver/dbeaver"
 
