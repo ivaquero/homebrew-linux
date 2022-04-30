@@ -17,7 +17,7 @@ class DockerComposeLinux < Formula
 
     def install
         libexec.install Dir["*"]
-        mv("#{libexec}/docker-compose-linux-#{arch}", "#{libexec}/docker-compose")
+        mv("#{libexec}/docker-compose-linux", "#{libexec}/docker-compose")
         chmod(0755, "#{libexec}/docker-compose")
         bin.install_symlink("#{libexec}/docker-compose")
     end
