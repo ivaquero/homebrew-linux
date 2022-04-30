@@ -1,19 +1,22 @@
 class JuliaLinux < Formula
   arch = Hardware::CPU.intel? ? "x86_64" : "aarch64"
+  arch_f = Hardware::CPU.intel? ? "x64" : "aarch64"
   
   version "1.7.2"
 
-  option "with-cn-mirror", "Download from https://mirrors.bfsu.edu.cn, use this option if you're in mainland China for a faster downloading speed."
-
-  
-
-  if build.with? "cn-mirror"
-      url "https://mirrors.bfsu.edu.cn/julia-releases/bin/linux/x64/1.7/julia-#{version}-linux-#{arch}.tar.gz"
+  if Hardware::CPU.intel?
+    sha256 "381ef5f2c317dd7e000f7e79c185b60576f653e32b1db1301d0b272ee721ade3"
   else
-      url "https://julialang-s3.julialang.org/bin/linux/x64/1.7/julia-#{version}-linux-#{arch}.tar.gz"
+    sha256 "b9b722ab0c5ac6099092c43a04426e84bd9b857e646a1f7fe987fb09efdeffec"
   end
 
-  sha256 "be7af676f8474afce098861275d28a0eb8a4ece3f83a11027e3554dcdecddb91"
+  option "with-cn-mirror", "Download from https://mirrors.bfsu.edu.cn, use this option if you're in mainland China for a faster downloading speed."
+
+  if build.with? "cn-mirror"
+      url "https://mirrors.bfsu.edu.cn/julia-releases/bin/linux/#{arch_f}/1.7/julia-#{version}-linux-#{arch}.tar.gz"
+  else
+      url "https://julialang-s3.julialang.org/bin/linux/#{arch_f}/1.7/julia-#{version}-linux-#{arch}.tar.gz"
+  end
 
   desc "The Julia programming language"
   homepage "https://julialang.org"
