@@ -1,5 +1,5 @@
 class Vscodium < Formula
-    arch = Hardware::CPU.intel? ? "x86_64" : "aarch64"
+    arch = Hardware::CPU.intel? ? "x64" : "arm64"
 
     version "1.66.2"
 

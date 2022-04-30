@@ -1,5 +1,5 @@
 class VisualStudioCode < Formula
-    
+
     version "1.66.0"
 
     url "https://github.com/microsoft/vscode/archive/refs/tags/#{version}.tar.gz"

@@ -1,4 +1,4 @@
-class DbeaverEe < Formula
+class DbeaverEnterprise < Formula
     arch = Hardware::CPU.intel? ? "x86_64" : "aarch64"
 
     version "22.0.0"
