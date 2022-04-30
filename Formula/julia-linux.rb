@@ -5,7 +5,7 @@ class JuliaLinux < Formula
   version "1.7.2"
 
   if Hardware::CPU.intel?
-    sha256 "381ef5f2c317dd7e000f7e79c185b60576f653e32b1db1301d0b272ee721ade3"
+    sha256 "a75244724f3b2de0e7249c861fbf64078257c16fb4203be78f1cf4dd5973ba95"
   else
     sha256 "b9b722ab0c5ac6099092c43a04426e84bd9b857e646a1f7fe987fb09efdeffec"
   end

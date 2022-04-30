@@ -4,7 +4,7 @@ class DockerLinux < Formula
     version "20.10.9"
 
     if Hardware::CPU.intel?
-        sha256 "381ef5f2c317dd7e000f7e79c185b60576f653e32b1db1301d0b272ee721ade3"
+        sha256 "caf74e54b58c0b38bb4d96c8f87665f29b684371c9a325562a3904b8c389995e"
     else
         sha256 "b9b722ab0c5ac6099092c43a04426e84bd9b857e646a1f7fe987fb09efdeffec"
     end
