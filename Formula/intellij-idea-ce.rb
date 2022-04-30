@@ -1,9 +1,9 @@
 class IntellijIdeaCe < Formula
     desc "The Most Intelligent Java IDE, community edition."
     homepage "http://www.jetbrains.com/idea/"
-    version "2018.1.4"
+    version "2022.1"
     url "https://download.jetbrains.com/idea/ideaIC-#{version}.tar.gz"
-    sha256 "26e674de05976cc7e822d77a2dfe8b8f6136e18f1e91f1c8212019f2781164e1"
+    sha256 "0400e6152fa0173e4e9a514c6398eef8f19150893298658c0b3eb1427e5bcbe5"
 
     def install
         libexec.install Dir["*"]

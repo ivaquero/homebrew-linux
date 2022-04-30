@@ -12,12 +12,12 @@ class DockerComposeLinux < Formula
     url "https://github.com/docker/compose/releases/download/v#{version}/docker-compose-linux-#{arch}"
     desc "Isolated development environments using Docker."
     homepage "https://github.com/docker/compose"
-    docker-compose-linux-x86_64
+
     conflicts_with "docker-compose"
 
     def install
         libexec.install Dir["*"]
-        mv("#{libexec}/docker-compose-Linux-#{arch}", "#{libexec}/docker-compose")
+        mv("#{libexec}/docker-compose-linux-#{arch}", "#{libexec}/docker-compose")
         chmod(0755, "#{libexec}/docker-compose")
         bin.install_symlink("#{libexec}/docker-compose")
     end

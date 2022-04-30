@@ -1,9 +1,9 @@
 class Clion < Formula
     desc "A cross-platform IDE for C and C++"
     homepage "http://www.jetbrains.com/clion/"
-    version "2018.3.4"
+    version "2022.1"
     url "https://download.jetbrains.com/cpp/CLion-#{version}.tar.gz"
-    sha256 "963fb343272e5903ac7dc944cc64ea9541ab4c150cc4ea796dcb0fb613bff4fd"
+    sha256 "a8ad8db6362d60a5ce60a7552110887dbd12e8420c839c368b55808b68dea38b"
 
     def install
         libexec.install Dir["*"]
