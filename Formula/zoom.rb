@@ -1,11 +1,13 @@
 class Zoom < Formula
-    desc "Video Conferencing, Web Conferencing, Webinars, Screen Sharing"
-    homepage "https://zoom.us"
+    
     version "5.9.6.2225"
 
     url "https://zoom.us/client/#{version}/zoom_x86_64.tar.xz"
     sha256 "0af655c5935a887f68a33968c3c54dcf4e8e530f95ea18b0ff2f254c49b18dcc"
 
+    desc "Video Conferencing, Web Conferencing, Webinars, Screen Sharing"
+    homepage "https://zoom.us"
+    
     def install
         libexec.install Dir["*"]
         (libexec/"zoom_brew_exec").write <<~EOS

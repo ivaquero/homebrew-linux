@@ -1,11 +1,13 @@
 class Teamviewer < Formula
-    desc "Remote support, remote access, and online meeting software that the world relies on."
-    homepage "http://www.teamviewer.com/"
+    
     version "15.28.8"
 
     url "https://download.teamviewer.com/download/teamviewer_i386.tar.xz"
     sha256 "c64432844f83d8ee4785257f7edcc2a527de3319b4e111b8b877f0b85945c300"
 
+    desc "Remote support, remote access, and online meeting software that the world relies on."
+    homepage "http://www.teamviewer.com/"
+    
     def install
         libexec.install Dir["*"]
         (libexec/"teamviewer_brew_exec").write <<~EOS

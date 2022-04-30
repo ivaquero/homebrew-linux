@@ -3,13 +3,7 @@ class TelegramDesktop < Formula
     homepage "https://github.com/telegramdesktop/tdesktop"
     version "3.6.1"
 
-    option "with-github", "Download installation file from github."
-
-    if build.with? "github"
-        url "https://github.com/telegramdesktop/tdesktop/releases/download/v#{version}/tsetup.#{version}.tar.xz"
-    else
-        url "https://updates.tdesktop.com/tlinux/tsetup.#{version}.tar.xz"
-    end
+    url "https://github.com/telegramdesktop/tdesktop/releases/download/v#{version}/tsetup.#{version}.tar.xz"
 
     sha256 "a2a77622d205520826d4f585cf68d332d82fed53c4b12f6b6cb36dfbf5ccd5f8"
 

@@ -1,11 +1,13 @@
 class Filezilla < Formula
-    desc "Full-featured graphical FTP/FTPS/SFTP client"
-    homepage "https://filezilla-project.org/"
+    
     version "3.31.0"
 
     url "https://download.filezilla-project.org/client/FileZilla_#{version}_x86_64-linux-gnu.tar.bz2"
     sha256 "324e7d02a7f5c49decff3df219ff6a4c0c7b912f622481767558f3c1f2a5738c"
 
+    desc "Full-featured graphical FTP/FTPS/SFTP client"
+    homepage "https://filezilla-project.org/"
+    
     def install
         libexec.install Dir["*"]
         bin.install_symlink("#{libexec}/bin/filezilla" => "filezilla")

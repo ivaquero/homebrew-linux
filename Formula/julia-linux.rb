@@ -25,5 +25,4 @@ class JuliaLinux < Formula
     libexec.install Dir["*"]
     bin.install_symlink Dir["#{libexec}/bin/*"]
   end
-
 end
