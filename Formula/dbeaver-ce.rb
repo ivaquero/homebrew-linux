@@ -1,7 +1,7 @@
 class DbeaverCe < Formula
     arch = Hardware::CPU.intel? ? "x86_64" : "aarch64"
 
-    version "22.0.3 "
+    version "22.0.3"
 
     if Hardware::CPU.intel?
         url "https://github.com/dbeaver/dbeaver/releases/download/#{version}/dbeaver-ce-#{version}-linux.gtk.x86_64-nojdk.tar.gz"
