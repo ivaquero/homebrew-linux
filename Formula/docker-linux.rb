@@ -1,17 +1,24 @@
 class DockerLinux < Formula
-    desc "Pack, ship and run any application as a lightweight container. This is the community edition."
-    homepage "https://docs.docker.com/install/linux/docker-ce/binaries"
-    version "19.03.5"
+    arch = Hardware::CPU.intel? ? "x86_64" : "aarch64"
+
+    version "20.10.9"
+
+    if Hardware::CPU.intel?
+        sha256 "381ef5f2c317dd7e000f7e79c185b60576f653e32b1db1301d0b272ee721ade3"
+    else
+        sha256 "b9b722ab0c5ac6099092c43a04426e84bd9b857e646a1f7fe987fb09efdeffec"
+    end
 
     option "with-cn-mirror", "Download from https://mirrors.aliyun.com/docker-ce, use this option if you're in mainland China for a faster downloading speed."
 
     if build.with? "cn-mirror"
-        url "https://mirrors.aliyun.com/docker-ce/linux/static/stable/x86_64/docker-#{version}.tgz"
+        url "https://mirrors.aliyun.com/docker-ce/linux/static/stable/#{arch}/docker-#{version}.tgz"
     else
-        url "https://download.docker.com/linux/static/stable/x86_64/docker-#{version}.tgz"
+        url "https://download.docker.com/linux/static/stable/#{arch}/docker-#{version}.tgz"
     end
 
-    sha256 "50cdf38749642ec43d6ac50f4a3f1f7f6ac688e8d8b4e1c5b7be06e1a82f06e9"
+    desc "Pack, ship and run any application as a lightweight container. This is the community edition."
+    homepage "https://download.docker.com/linux/static/stable/x86_64/"
 
     conflicts_with "docker", :because => "both install `docker` binaries"
 
