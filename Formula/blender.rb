@@ -3,8 +3,8 @@ class Blender < Formula
     homepage "https://www.blender.org"
     version "3.1.2"
 
-    url "https://download.blender.org/release/Blender3.1/blender-#{version}-linux-x64.tar.bz2"
-    sha256 "43824a4e0b0c6de6fa34ff224eec44c1cc9f26a95f6f3c8c2558d1c05704183c"
+    url "https://download.blender.org/release/Blender3.1/blender-#{version}-linux-x64.tar.xz"
+    sha256 "c1d345b25c6f83708b2681d354d70a3e6023c04bb73cc7943366c0c19e542958"
 
     def install
         libexec.install Dir["*"]
