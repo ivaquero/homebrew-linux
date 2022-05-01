@@ -1,9 +1,9 @@
 class TorBrowser < Formula
  
-  version "11.0.9"
+  version "11.0.11"
 
   url "https://www.torproject.org/dist/torbrowser/#{version}/tor-browser-linux64-#{version}_en-US.tar.xz"
-  sha256 "baa5ccafb5c68f1c46f9ae983b9b0a0419f66d41e0483ba5aacb3462fa0a8032"
+  sha256 "6df94735440f608cb80c5b45c777a25a9aeaa5b5f0137dab28fce86d9b14a9b7"
 
   desc "Modified Firefox with privacy add-ons, encryption & advanced proxy"
   homepage "https://www.torproject.org/projects/torbrowser.html.en"
