@@ -13,7 +13,7 @@ on:
 jobs:
   # This workflow contains a single job called "build"
   test:
-    name: Test Homebrew-Linux
+    name: Test Homebrew-Linux 1
     runs-on: ubuntu-latest
 
     steps:
@@ -25,6 +25,57 @@ jobs:
         run: |
           brew tap ivaquero/linux
           cd $(brew --prefix)/Homebrew/Library/Taps/ivaquero/homebrew-linux
-          for formula in Formula/*.rb; do
+          for formula in Formula/[a-g]*.rb; do
+              echo "ivaquero/linux/$formula" | sed "s/\/Formula//g" | sed "s/.rb//g" | xargs brew install
+          done
+
+  test:
+    name: Test Homebrew-Linux 2
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Homebrew
+        id: set-up-homebrew
+        uses: Homebrew/actions/setup-homebrew@master
+      - name: Test script
+        run: |
+          brew tap ivaquero/linux
+          cd $(brew --prefix)/Homebrew/Library/Taps/ivaquero/homebrew-linux
+          for formula in Formula/[h-n]*.rb; do
+              echo "ivaquero/linux/$formula" | sed "s/\/Formula//g" | sed "s/.rb//g" | xargs brew install
+          done
+
+  test:
+    name: Test Homebrew-Linux 3
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Homebrew
+        id: set-up-homebrew
+        uses: Homebrew/actions/setup-homebrew@master
+      - name: Test script
+        run: |
+          brew tap ivaquero/linux
+          cd $(brew --prefix)/Homebrew/Library/Taps/ivaquero/homebrew-linux
+          for formula in Formula/[o-t]*.rb; do
+              echo "ivaquero/linux/$formula" | sed "s/\/Formula//g" | sed "s/.rb//g" | xargs brew install
+          done
+
+  test:
+    name: Test Homebrew-Linux 4
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Homebrew
+        id: set-up-homebrew
+        uses: Homebrew/actions/setup-homebrew@master
+      - name: Test script
+        run: |
+          brew tap ivaquero/linux
+          cd $(brew --prefix)/Homebrew/Library/Taps/ivaquero/homebrew-linux
+          for formula in Formula/[u-z]*.rb; do
               echo "ivaquero/linux/$formula" | sed "s/\/Formula//g" | sed "s/.rb//g" | xargs brew install
           done
