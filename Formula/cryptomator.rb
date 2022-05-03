@@ -2,7 +2,7 @@ class Cryptomator < Formula
    
     version "1.6.9"
 
-    url "https://github.com/cryptomator/cryptomator/releases/download/#{version}/Cryptomator-#{version}-x86_64.AppImage"
+    url "https://github.com/cryptomator/cryptomator/releases/download/#{version}/Cryptomator-#{version}-tar.gz"
     sha256 "a60cfd735a34ee95ea1f541dc9f3132070a0722a236368bc001e89efa0eb7fab"
 
     desc "Multi-platform client-side cloud file encryption tool"
@@ -10,8 +10,7 @@ class Cryptomator < Formula
 
     def install
         prefix.install Dir["*"]
-        chmod(0755, "#{prefix}/Cryptomator-#{version}-x86_64.AppImage")
-        bin.install_symlink("#{prefix}/Cryptomator-#{version}-x86_64.AppImage" => "Cryptomator")
+        bin.install_symlink("#{libexec}/Cryptomator" => "Cryptomator")
     end
 
     def caveats; <<~EOS
