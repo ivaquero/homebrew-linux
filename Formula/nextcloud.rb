@@ -15,7 +15,7 @@ class Nextcloud < Formula
     end
   
     def caveats; <<~EOS
-          Executable is linked as "nextcloud".
-          EOS
+        Executable is linked as "nextcloud".
+        EOS
     end
 end
