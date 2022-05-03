@@ -7,6 +7,6 @@
 
 A [Homebrew](https://github.com/Homebrew/brew) 🍺 Repo to Install GUI Applications on Linux
 
-Inspired by [athrunsun/linuxbinary](https://github.com/athrunsun/homebrew-linuxbinary/), but with **latest updates** and applications.
+Inspired by [athrunsun/linuxbinary](https://github.com/athrunsun/homebrew-linuxbinary/), but with **latest updates** and more applications.
 
 Created for testing.
