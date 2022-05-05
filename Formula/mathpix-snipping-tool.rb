@@ -3,7 +3,7 @@ class MathpixSnippingTool < Formula
     version "03.00.0074"
     
     url "https://download.mathpix.com/linux/Mathpix_Snipping_Tool-x86_64.v#{version}.AppImage"
-    sha256 "6e333bcd1e8ae0cd93e1de52bdb966fdd9b8896986acb72f13d23ae100872e5c"
+    sha256 "80156ed6cedcf474bea62837d15d0d60b59218f8eaa3bfed823dc5ad6471dfe2"
 
     desc "Scanner app for math and science"
     homepage "https://mathpix.com/"

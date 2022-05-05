@@ -10,7 +10,7 @@ on:
 
 jobs:
   job1:
-    name: Test Homebrew-Linux 1
+    name: Test Homebrew-Linux A-D
     runs-on: ubuntu-latest
 
     steps:
@@ -22,12 +22,12 @@ jobs:
         run: |
           brew tap ivaquero/linux
           cd $(brew --prefix)/Homebrew/Library/Taps/ivaquero/homebrew-linux
-          for formula in Formula/[a-g]*.rb; do
+          for formula in Formula/[a-d]*.rb; do
               echo "ivaquero/linux/$formula" | sed "s/\/Formula//g" | sed "s/.rb//g" | xargs brew install
           done
 
   job2:
-    name: Test Homebrew-Linux 2
+    name: Test Homebrew-Linux E-K
     runs-on: ubuntu-latest
 
     steps:
@@ -39,12 +39,12 @@ jobs:
         run: |
           brew tap ivaquero/linux
           cd $(brew --prefix)/Homebrew/Library/Taps/ivaquero/homebrew-linux
-          for formula in Formula/[h-n]*.rb; do
+          for formula in Formula/[e-k]*.rb; do
               echo "ivaquero/linux/$formula" | sed "s/\/Formula//g" | sed "s/.rb//g" | xargs brew install
           done
 
   job3:
-    name: Test Homebrew-Linux 3
+    name: Test Homebrew-Linux L-Q
     runs-on: ubuntu-latest
 
     steps:
@@ -56,12 +56,29 @@ jobs:
         run: |
           brew tap ivaquero/linux
           cd $(brew --prefix)/Homebrew/Library/Taps/ivaquero/homebrew-linux
-          for formula in Formula/[o-t]*.rb; do
+          for formula in Formula/[l-q]*.rb; do
               echo "ivaquero/linux/$formula" | sed "s/\/Formula//g" | sed "s/.rb//g" | xargs brew install
           done
 
   job4:
-    name: Test Homebrew-Linux 4
+    name: Test Homebrew-Linux R-T
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Homebrew
+        id: set-up-homebrew
+        uses: Homebrew/actions/setup-homebrew@master
+      - name: Test script
+        run: |
+          brew tap ivaquero/linux
+          cd $(brew --prefix)/Homebrew/Library/Taps/ivaquero/homebrew-linux
+          for formula in Formula/[r-t]*.rb; do
+              echo "ivaquero/linux/$formula" | sed "s/\/Formula//g" | sed "s/.rb//g" | xargs brew install
+          done
+
+  job5:
+    name: Test Homebrew-Linux U-Z
     runs-on: ubuntu-latest
 
     steps:
