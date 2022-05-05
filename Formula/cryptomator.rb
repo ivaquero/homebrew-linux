@@ -15,7 +15,7 @@ class Cryptomator < Formula
     end
 
     def caveats; <<~EOS
-        Executable is linked as "marktext".
+        Executable is linked as "Cryptomator".
         EOS
     end
 end
