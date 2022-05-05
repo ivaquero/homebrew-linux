@@ -10,3 +10,24 @@ A [Homebrew](https://github.com/Homebrew/brew) 🍺 Repo to Install GUI Applicat
 Inspired by [athrunsun/linuxbinary](https://github.com/athrunsun/homebrew-linuxbinary/), but with **latest updates** and more applications.
 
 Created for testing.
+
+## Install Homebrew 🍺 🚴
+
+```bash
+/bin/zsh -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+brew tap ivaquero/chinese
+```
+
+## Add this tap
+
+```bash
+brew tap ivaquero/chinese
+brew update
+```
+
+## Install App
+
+```bash
+brew install chinese/<app_name>
+```
+
