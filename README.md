@@ -28,6 +28,6 @@ brew update
 ## Install App
 
 ```bash
-brew install linux/<app_name>
+brew install ivaquero/linux/<app_name>
 ```
 
