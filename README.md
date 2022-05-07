@@ -15,20 +15,19 @@ Created for testing.
 ## Install Homebrew 🍺 🚴
 
 ```bash
-/bin/zsh -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-brew tap ivaquero/chinese
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
 
 ## Add this tap
 
 ```bash
-brew tap ivaquero/chinese
+brew tap ivaquero/linux
 brew update
 ```
 
 ## Install App
 
 ```bash
-brew install chinese/<app_name>
+brew install linux/<app_name>
 ```
 
